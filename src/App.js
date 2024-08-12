@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LoginPage from './LoginPage';
+//import { useAuth0 } from '@auth0/auth0-react';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { NextPage } from './NextPage';
+import GoogleLoginRedirect from './GoogleLoginRedirection';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+    return (
+        // <div className="App">
+        //     <LoginPage />
+
+        // </div>
+        <BrowserRouter>
+        <Routes>
+            <Route path='/' element={ <LoginPage />}></Route>
+            <Route path="/google-login-redirect" element={<GoogleLoginRedirect/>} />
+            <Route path='/verify' element={<NextPage/>}></Route>
+        </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
