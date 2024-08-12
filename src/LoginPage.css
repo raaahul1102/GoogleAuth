@@ -1,0 +1,89 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid red;
+    padding: 10px;
+}
+
+.login-container {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.google-signup, .create-account {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.google-signup {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-signup svg {
+    margin-right: 10px;
+}
+
+.create-account {
+    background-color: blue;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid red;
+    padding: 10px;
+}
+
+.users {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.user {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.anonymous {
+    background-color: green;
+    left: 0;
+}
+
+.umang {
+    background-color: red;
+    right: 0;
+}
+
+.muhammad {
+    background-color: yellow;
+    bottom: 0;
+    right: 20px;
+}
